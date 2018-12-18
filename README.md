@@ -8,6 +8,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 The intent of this project is to create a basic React App using Redux, to understand how it works.
 
+## Screenshots
+
+[![image.png](https://i.postimg.cc/bNDq2H50/image.png)](https://postimg.cc/PPjggZTN)
+
+[![image.png](https://i.postimg.cc/yNFd3Xkp/image.png)](https://postimg.cc/zLG59hwT)
+
 ## Useful links
 
 I followed mainly one tutorial - [React Redux Tutorial for Begginers by Valentino Gagliardi](https://www.valentinog.com/blog/react-redux-tutorial-beginners/), but there's a few other useful links that helped with the creation of this project, listed below:

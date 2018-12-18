@@ -9,8 +9,8 @@ import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 
 // custom modules
-import List from './List';
-import Form from './Form';
+import ArticleForm from './Form';
+import ArticleList from './List';
 
 // component's style
 const styles = theme => ({
@@ -31,9 +31,9 @@ const Articles = props => {
         <Typography variant="h5" component="h3">
           Articles
         </Typography>
-        <List />
+        <ArticleList />
         <Typography component="p">Add a new article</Typography>
-        <Form />
+        <ArticleForm />
       </Paper>
     </div>
   );

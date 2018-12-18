@@ -4,6 +4,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
+// material ui
+import ListItem from '@material-ui/core/ListItem';
+import DeleteIcon from '@material-ui/icons/Delete';
+import IconButton from '@material-ui/core/IconButton';
+import ListItemText from '@material-ui/core/ListItemText';
+import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
+
 // custom modules
 import Articles from '../../actions/articles';
 
@@ -45,10 +52,18 @@ class ConnectedArticle extends React.PureComponent {
     const { title } = this.props;
 
     return (
-      <li>
-        {title}
-        <button onClick={this.handleDelete}>Deletar</button>
-      </li>
+      <ListItem role={undefined} dense>
+        <ListItemText primary={title} />
+        <ListItemSecondaryAction>
+          <IconButton aria-label="Comments" onClick={this.handleDelete}>
+            <DeleteIcon />
+          </IconButton>
+        </ListItemSecondaryAction>
+      </ListItem>
+      // <li>
+      //   {title}
+      //   <button onClick={this.handleDelete}>Deletar</button>
+      // </li>
     );
   }
 }
