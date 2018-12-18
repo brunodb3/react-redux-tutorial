@@ -1,32 +1,30 @@
 // src/js/components/Form.js
 
 // importing modules
-import uuidv1 from 'uuid'
-import { connect } from 'react-redux'
-import React, { Component } from 'react'
+import React from 'react';
+import uuidv1 from 'uuid';
+import { connect } from 'react-redux';
 
 // custom modules
-import { addArticle } from '../actions/index'
+import { addArticle } from '../actions/index';
 
 // mapping the dispatch to the component's props
-const mapDispatchToProps = dispatch => {
-  return {
-    // mapping available actions (dispacthes)
-    addArticle: article => dispatch(addArticle(article))
-  }
-}
+const mapDispatchToProps = dispatch => ({
+  // mapping available actions (dispacthes)
+  addArticle: article => dispatch(addArticle(article)),
+});
 
 // creating the connected form
-class ConnectedForm extends Component {
-  constructor() {
-    super()
+class ConnectedForm extends React.Component {
+  constructor(props) {
+    super(props);
 
     this.state = {
-      title: ''
-    }
+      title: '',
+    };
 
-    this.handleChange = this.handleChange.bind(this)
-    this.handleSubmit = this.handleSubmit.bind(this)
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   /**
@@ -36,7 +34,7 @@ class ConnectedForm extends Component {
    * @memberof ConnectedForm
    */
   handleChange(event) {
-    this.setState({ [event.target.id]: event.target.value })
+    this.setState({ [event.target.id]: event.target.value });
   }
 
   /**
@@ -46,17 +44,17 @@ class ConnectedForm extends Component {
    * @memberof ConnectedForm
    */
   handleSubmit(event) {
-    event.preventDefault()
+    event.preventDefault();
 
     // getting the article's attributes/props
-    const id = uuidv1()
-    const { title } = this.state
+    const id = uuidv1();
+    const { title } = this.state;
 
     // dispatching the addArticle action
-    this.props.addArticle({ title, id })
+    this.props.addArticle({ title, id });
 
     // returning the state to initialState
-    this.setState({ title: '' })
+    this.setState({ title: '' });
   }
 
   /**
@@ -67,29 +65,25 @@ class ConnectedForm extends Component {
    */
   render() {
     // declaring props
-    const { title } = this.state
+    const { title } = this.state;
 
     return (
-      <form onSubmit={ this.handleSubmit }>
+      <form onSubmit={this.handleSubmit}>
         <div>
           <label htmlFor="title">Title</label>
-          <input
-            id="title"
-            type="text"
-            value={title}
-            onChange={this.handleChange}
-          />
+          <input id="title" type="text" value={title} onChange={this.handleChange} />
         </div>
-        <button type="submit">
-          Save
-        </button>
+        <button type="submit">Save</button>
       </form>
-    )
+    );
   }
 }
 
 // connecting the React component to Redux
-const Form = connect(null, mapDispatchToProps)(ConnectedForm)
+const Form = connect(
+  null,
+  mapDispatchToProps
+)(ConnectedForm);
 
 // exporting the component
-export default Form
+export default Form;

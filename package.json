@@ -8,11 +8,12 @@
     "react-scripts": "2.1.1"
   },
   "scripts": {
-    "commit": "npx git-cz",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "precommit": "pretty-quick --staged",
+    "commit": "npm run precommit && npx git-cz"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -25,6 +26,10 @@
   ],
   "devDependencies": {
     "cz-conventional-changelog": "2.1.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "husky": "^1.2.1",
+    "prettier": "1.15.3",
+    "pretty-quick": "^1.8.0",
     "react-redux": "^6.0.0",
     "redux": "^4.0.1",
     "uuid": "^3.3.2"

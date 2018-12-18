@@ -1,11 +1,19 @@
 # React + Redux tutorial
+
 by [@brunodb3](https://github.com/brunodb3)
+
+![React + Redux](https://miro.medium.com/max/1200/0*1p4U99DAhsOHqX-m.jpg)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 The intent of this project is to create a basic React App using Redux, to understand how it works.
 
-I followed two tutorials [React Redux Tutorial for Begginers by Valentino Gagliardi](https://www.valentinog.com/blog/react-redux-tutorial-beginners/) and [Getting Started with Redux by Dan Abramov](https://egghead.io/courses/getting-started-with-redux)
+## Useful links
+
+I followed mainly one tutorial - [React Redux Tutorial for Begginers by Valentino Gagliardi](https://www.valentinog.com/blog/react-redux-tutorial-beginners/), but there's a few other useful links that helped with the creation of this project, listed below:
+
+- [Getting Started with Redux by Dan Abramov](https://egghead.io/courses/getting-started-with-redux)
+- [Why use super(props) in the constructor method](https://overreacted.io/why-do-we-write-super-props/)
 
 ## Available Scripts
 

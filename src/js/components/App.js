@@ -1,11 +1,11 @@
 // src/js/components/App.js
 
 // importing modules
-import React from 'react'
+import React from 'react';
 
 // custom modules
-import List from './List'
-import Form from './Form'
+import List from './List';
+import Form from './Form';
 
 // creating the main App component
 // TODO: add a routing component/library
@@ -20,7 +20,7 @@ const App = () => (
       <Form />
     </div>
   </div>
-)
+);
 
 // exporting the component
-export default App
+export default App;

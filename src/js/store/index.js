@@ -1,10 +1,10 @@
 // src/js/store/index.js
 
 // importing modules
-import { createStore } from "redux";
+import { createStore } from 'redux';
 
 // custom modules
-import rootReducer from "../reducers/index";
+import rootReducer from '../reducers/index';
 
 // creating the redux store, with Redux DevTools extension enabled
 // (more at https://github.com/zalmoxisus/redux-devtools-extension)

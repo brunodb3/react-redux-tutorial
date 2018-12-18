@@ -1,7 +1,7 @@
 // src/js/actions/index.js
 
 // custom modules
-import { ADD_ARTICLE, DELETE_ARTICLE } from '../constants/action-types'
+import { ADD_ARTICLE, DELETE_ARTICLE } from '../constants/action-types';
 
 // declaring the actions from the available action types
 // adds an article to the store tree
