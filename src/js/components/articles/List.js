@@ -1,11 +1,11 @@
-// src/js/components/List.js
+// src/js/components/articles/List.js
 
 // importing modules
 import React from 'react';
 import { connect } from 'react-redux';
 
 // custom modules
-import Article from './Article';
+import Article from './Single';
 
 // mapping the state to the component's props
 const mapStateToProps = state => ({
@@ -16,8 +16,8 @@ const mapStateToProps = state => ({
 // creating the connected list
 const ConnectedList = ({ articles }) => (
   <ul>
-    {articles.map(eachArticle => (
-      <Article id={eachArticle.id} key={eachArticle.id} title={eachArticle.title} />
+    {articles.map(element => (
+      <Article id={element.id} key={element.id} title={element.title} />
     ))}
   </ul>
 );

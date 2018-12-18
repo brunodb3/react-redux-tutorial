@@ -1,17 +1,27 @@
 // src/js/store/index.js
 
 // importing modules
-import { createStore } from 'redux';
+import { combineReducers } from 'redux';
+import { routerReducer } from 'react-router-redux';
 
 // custom modules
-import rootReducer from '../reducers/index';
+import configureStore from './createStore';
+import ArticleReducer, { articleSelectors } from '../reducers/ArticleReducer';
 
-// creating the redux store, with Redux DevTools extension enabled
-// (more at https://github.com/zalmoxisus/redux-devtools-extension)
-const store = createStore(
-  rootReducer,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-);
+// combining the reducers into one
+export const reducers = combineReducers({
+  [articleSelectors.key]: ArticleReducer,
+  router: routerReducer,
+});
 
-// exporting the store
-export default store;
+// exporting the store configuration
+export default () => {
+  // creating the redux store, with Redux DevTools extension enabled
+  // (more at https://github.com/zalmoxisus/redux-devtools-extension)
+  let { store } = configureStore(
+    reducers,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  );
+
+  return store;
+};

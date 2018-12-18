@@ -12,8 +12,16 @@ The intent of this project is to create a basic React App using Redux, to unders
 
 I followed mainly one tutorial - [React Redux Tutorial for Begginers by Valentino Gagliardi](https://www.valentinog.com/blog/react-redux-tutorial-beginners/), but there's a few other useful links that helped with the creation of this project, listed below:
 
+- [Debug React without leaving VSCode](https://medium.com/@auchenberg/live-edit-and-debug-your-react-apps-directly-from-vs-code-without-leaving-the-editor-3da489ed905f)
+- [Material UI - CSS framework for React](https://material-ui.com)
 - [Getting Started with Redux by Dan Abramov](https://egghead.io/courses/getting-started-with-redux)
 - [Why use super(props) in the constructor method](https://overreacted.io/why-do-we-write-super-props/)
+- [React Router Redux - React Routing with Redux states](https://github.com/reactjs/react-router-redux)
+- [Fixing an error with React Router - using an older version](https://github.com/ReactTraining/react-router/issues/4477#issuecomment-278116607)
+
+### Observations
+
+There's some libraries in this project that are either deprecated or outdated. `react-router-redux` is one of them. I chose to use them for learning purposes. In the future, I will create more projects with different libraries.
 
 ## Available Scripts
 
@@ -41,6 +49,18 @@ The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run commit`
+
+Creates a new commit using on Commitizen, to make standard commit messages. Works really well with standard-version (see below - `release` script).
+
+For more information, check the [Commitizen repository](https://github.com/commitizen/cz-cli)
+
+### `npm run release`
+
+Creates a new release, bumping the project version and adding changes to `CHANGELOG.md`, according to commit messages.
+
+For more information, check the [Standard Version repository](https://github.com/conventional-changelog/standard-version)
 
 ## Learn More
 

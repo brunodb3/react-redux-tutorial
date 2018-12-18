@@ -1,4 +1,4 @@
-// src/js/components/Form.js
+// src/js/components/articles/Form.js
 
 // importing modules
 import React from 'react';
@@ -6,12 +6,12 @@ import uuidv1 from 'uuid';
 import { connect } from 'react-redux';
 
 // custom modules
-import { addArticle } from '../actions/index';
+import Articles from '../../actions/articles';
 
 // mapping the dispatch to the component's props
 const mapDispatchToProps = dispatch => ({
   // mapping available actions (dispacthes)
-  addArticle: article => dispatch(addArticle(article)),
+  add: article => dispatch(Articles.add(article)),
 });
 
 // creating the connected form
@@ -50,8 +50,8 @@ class ConnectedForm extends React.Component {
     const id = uuidv1();
     const { title } = this.state;
 
-    // dispatching the addArticle action
-    this.props.addArticle({ title, id });
+    // dispatching the add action
+    this.props.add({ title, id });
 
     // returning the state to initialState
     this.setState({ title: '' });

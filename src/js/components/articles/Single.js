@@ -1,16 +1,16 @@
-// src/js/components/Article.js
+// src/js/components/articles/Article.js
 
 // importing modules
 import React from 'react';
 import { connect } from 'react-redux';
 
 // custom modules
-import { deleteArticle } from '../actions/index';
+import Articles from '../../actions/articles';
 
 // mapping the dispatch to the component's props
 const mapDispatchToProps = dispatch => ({
   // mapping available actions (dispacthes)
-  deleteArticle: articleId => dispatch(deleteArticle(articleId)),
+  delete: articleId => dispatch(Articles.delete(articleId)),
 });
 
 // creating the connected article
@@ -30,8 +30,8 @@ class ConnectedArticle extends React.PureComponent {
   handleDelete(event) {
     event.preventDefault();
 
-    // dispatching the deleteArticle action
-    this.props.deleteArticle(this.props.id);
+    // dispatching the delete action
+    this.props.delete(this.props.id);
   }
 
   /**

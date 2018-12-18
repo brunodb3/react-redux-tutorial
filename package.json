@@ -1,17 +1,26 @@
 {
-  "name": "my-app",
+  "private": false,
   "version": "0.1.0",
-  "private": true,
+  "name": "react-redux-tutorial",
   "dependencies": {
-    "react": "^16.6.3",
+    "@material-ui/core": "^3.7.0",
+    "history": "^4.7.2",
+    "react": "^16.3.2",
     "react-dom": "^16.6.3",
-    "react-scripts": "2.1.1"
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^5.0.0-alpha.9",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "redux-promise-middleware": "^5.1.1",
+    "redux-thunk": "^2.2.0"
   },
   "scripts": {
     "commit": "npx git-cz",
+    "test": "react-scripts test",
+    "release": "standard-version",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
     "eject": "react-scripts eject",
     "precommit": "pretty-quick --staged"
   },
@@ -30,8 +39,8 @@
     "husky": "^1.2.1",
     "prettier": "1.15.3",
     "pretty-quick": "^1.8.0",
-    "react-redux": "^6.0.0",
-    "redux": "^4.0.1",
+    "prop-types": "^15.6.2",
+    "standard-version": "^4.4.0",
     "uuid": "^3.3.2"
   },
   "config": {
