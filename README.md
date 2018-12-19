@@ -8,25 +8,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 The intent of this project is to create a basic React App using Redux, to understand how it works.
 
-## Screenshots
-
-[![image.png](https://i.postimg.cc/bNDq2H50/image.png)](https://postimg.cc/PPjggZTN)
-
-[![image.png](https://i.postimg.cc/yNFd3Xkp/image.png)](https://postimg.cc/zLG59hwT)
-
-## Useful links
-
-I followed mainly one tutorial - [React Redux Tutorial for Begginers by Valentino Gagliardi](https://www.valentinog.com/blog/react-redux-tutorial-beginners/), but there's a few other useful links that helped with the creation of this project, listed below:
-
-- [Debug React without leaving VSCode](https://medium.com/@auchenberg/live-edit-and-debug-your-react-apps-directly-from-vs-code-without-leaving-the-editor-3da489ed905f)
-- [Material UI - CSS framework for React](https://material-ui.com)
-- [Getting Started with Redux by Dan Abramov](https://egghead.io/courses/getting-started-with-redux)
-- [Why use super(props) in the constructor method](https://overreacted.io/why-do-we-write-super-props/)
-- [React Router Redux - React Routing with Redux states](https://github.com/reactjs/react-router-redux)
-- [Fixing an error with React Router - using an older version](https://github.com/ReactTraining/react-router/issues/4477#issuecomment-278116607)
-- [Stack Overflow answer about async calls in Redux - using Thunk middleware](https://stackoverflow.com/a/35415559)
-
-### Observations
+### Note
 
 There's some libraries in this project that are either deprecated or outdated. `react-router-redux` is one of them. I chose to use them for learning purposes. In the future, I will create more projects with different libraries.
 
@@ -74,3 +56,25 @@ For more information, check the [Standard Version repository](https://github.com
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Useful links
+
+I followed mainly one tutorial - [React Redux Tutorial for Begginers by Valentino Gagliardi](https://www.valentinog.com/blog/react-redux-tutorial-beginners/), but there's a few other useful links that helped with the creation of this project, listed below:
+
+- [Thunks in Redux](https://medium.com/fullstack-academy/thunks-in-redux-the-basics-85e538a3fe60)
+- [Debug React without leaving VSCode](https://medium.com/@auchenberg/live-edit-and-debug-your-react-apps-directly-from-vs-code-without-leaving-the-editor-3da489ed905f)
+- [Material UI - CSS framework for React](https://material-ui.com)
+- [Getting Started with Redux by Dan Abramov](https://egghead.io/courses/getting-started-with-redux)
+- [Why use super(props) in the constructor method](https://overreacted.io/why-do-we-write-super-props/)
+- [JSON Placeholder API - for testing RESTful API calls](https://jsonplaceholder.typicode.com/)
+- [React Router Redux - React Routing with Redux states](https://github.com/reactjs/react-router-redux)
+- [Fixing an error with React Router - using an older version](https://github.com/ReactTraining/react-router/issues/4477#issuecomment-278116607)
+- [Stack Overflow answer about async calls in Redux - using Thunk middleware](https://stackoverflow.com/a/35415559)
+
+## Screenshots
+
+[![Home](https://i.postimg.cc/KvcwvKVM/image.png)](https://postimg.cc/WtKX54sN)
+
+[![Articles](https://i.postimg.cc/3wjFv10J/image.png)](https://postimg.cc/3yRGMgZP)
+
+[![Users](https://i.postimg.cc/6qCvk5V6/image.png)](https://postimg.cc/ct4CYW5P)

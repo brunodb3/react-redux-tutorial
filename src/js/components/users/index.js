@@ -30,8 +30,8 @@ const Users = props => {
         <Typography variant="h5" component="h3">
           Users
         </Typography>
-        <UserList />
         <Typography component="p">Listing users with redux-thunk</Typography>
+        <UserList />
       </Paper>
     </div>
   );
