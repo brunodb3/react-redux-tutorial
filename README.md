@@ -24,6 +24,7 @@ I followed mainly one tutorial - [React Redux Tutorial for Begginers by Valentin
 - [Why use super(props) in the constructor method](https://overreacted.io/why-do-we-write-super-props/)
 - [React Router Redux - React Routing with Redux states](https://github.com/reactjs/react-router-redux)
 - [Fixing an error with React Router - using an older version](https://github.com/ReactTraining/react-router/issues/4477#issuecomment-278116607)
+- [Stack Overflow answer about async calls in Redux - using Thunk middleware](https://stackoverflow.com/a/35415559)
 
 ### Observations
 

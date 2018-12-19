@@ -25,6 +25,7 @@ class ConnectedArticle extends React.PureComponent {
   constructor(props) {
     super(props);
 
+    // binding methods
     this.handleDelete = this.handleDelete.bind(this);
   }
 
@@ -60,10 +61,6 @@ class ConnectedArticle extends React.PureComponent {
           </IconButton>
         </ListItemSecondaryAction>
       </ListItem>
-      // <li>
-      //   {title}
-      //   <button onClick={this.handleDelete}>Deletar</button>
-      // </li>
     );
   }
 }

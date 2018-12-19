@@ -13,6 +13,7 @@ import Typography from '@material-ui/core/Typography';
 
 // custom modules
 import HomeRoutes from '../../routes/HomeRoutes';
+import UserRoutes from '../../routes/UserRoutes';
 import ArticleRoutes from '../../routes/ArticleRoutes';
 
 // mapping the dispatch to the component's props
@@ -27,6 +28,7 @@ class ConnectedHome extends React.PureComponent {
     super(props);
 
     this.goToHome = this.goToHome.bind(this);
+    this.goToUsers = this.goToUsers.bind(this);
     this.goToArticles = this.goToArticles.bind(this);
 
     // declaring the styles for each component
@@ -66,6 +68,19 @@ class ConnectedHome extends React.PureComponent {
     this.props.navigate(ArticleRoutes.DEFAULT);
   }
 
+  /**
+   * Navigates to the Users route
+   *
+   * @param {*} event
+   * @memberof ConnectedHome
+   */
+  goToUsers(event) {
+    event.preventDefault();
+
+    // navigating to the home default route
+    this.props.navigate(UserRoutes.DEFAULT);
+  }
+
   render() {
     return (
       <div style={this.styles.root}>
@@ -79,6 +94,9 @@ class ConnectedHome extends React.PureComponent {
             </Button>
             <Button color="inherit" onClick={this.goToArticles}>
               Articles
+            </Button>
+            <Button color="inherit" onClick={this.goToUsers}>
+              Users
             </Button>
           </Toolbar>
         </AppBar>

@@ -6,10 +6,12 @@ import { routerReducer } from 'react-router-redux';
 
 // custom modules
 import configureStore from './createStore';
+import UserReducer, { userSelectors } from '../reducers/UserReducer';
 import ArticleReducer, { articleSelectors } from '../reducers/ArticleReducer';
 
 // combining the reducers into one
 export const reducers = combineReducers({
+  [userSelectors.key]: UserReducer,
   [articleSelectors.key]: ArticleReducer,
   router: routerReducer,
 });
