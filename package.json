@@ -1,6 +1,6 @@
 {
   "private": false,
-  "version": "0.2.1",
+  "version": "0.3.0",
   "name": "react-redux-tutorial",
   "dependencies": {
     "@material-ui/core": "^3.7.0",
