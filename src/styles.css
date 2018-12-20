@@ -1,0 +1,9 @@
+/* src/styles.css */
+
+.paper {
+  padding: 20px;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}

@@ -1,0 +1,6 @@
+/* src/scenes/Users/components/UserList/styles.css */
+
+.user-list {
+  width: 100%;
+  max-width: 360px;
+}

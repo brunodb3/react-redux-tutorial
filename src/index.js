@@ -1,20 +1,33 @@
-// src/js/index.js
+// src/index.js
 
 // importing modules
 import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
-import { ConnectedRouter } from 'react-router-redux';
+import { combineReducers } from 'redux';
+import { ConnectedRouter, routerReducer } from 'react-router-redux';
 
 // custom modules
-import App from './js/App';
-import createStore from './js/store';
-import { history } from './js/store/createStore';
+import App from './App';
+import createStore, { history } from './store';
+
+// reducers
+import UserReducer, { userSelectors } from 'services/users/reducer.js';
+import TodoReducer, { todosSelectors } from 'services/todos/reducer.js';
+
+// stylesheets
+import './styles.css';
+
+// combining the reducers into one
+export const reducers = combineReducers({
+  [userSelectors.key]: UserReducer,
+  [todosSelectors.key]: TodoReducer,
+  router: routerReducer,
+});
 
 // creating the store tree
-const store = createStore();
+const store = createStore(reducers);
 
-// rendering the initial app
 render(
   <Provider store={store}>
     <ConnectedRouter history={history}>

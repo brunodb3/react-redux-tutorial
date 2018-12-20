@@ -12,6 +12,59 @@ The intent of this project is to create a basic React App using Redux, to unders
 
 There's some libraries in this project that are either deprecated or outdated. `react-router-redux` is one of them. I chose to use them for learning purposes. In the future, I will create more projects with different libraries.
 
+## Folder Structure
+
+The folder structure of this application was created based on [@alexmngn post on Medium](https://medium.com/@alexmngn/how-to-better-organize-your-react-applications-2fd3ea1920f1).
+
+Example structure:
+
+```
+/src
+  /components
+    /Button
+    /Notifications
+      /components
+        /ButtonDismiss
+          /images
+          /locales
+          /specs
+          /index.js
+          /styles.scss
+      /index.js
+      /styles.scss
+  /scenes
+    /Home
+      /components
+        /ButtonLike
+      /services
+        /processData
+      /index.js
+      /styles.scss
+    /Sign
+      /components
+        /FormField
+      /scenes
+        /Login
+        /Register
+          /locales
+          /specs
+          /index.js
+          /styles.scss
+  /services
+    /api
+    /geolocation
+    /session
+      /actions.js
+      /index.js
+      /reducer.js
+    /users
+      /actions.js
+      /api.js
+      /reducer.js
+  index.js
+  store.js
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -70,6 +123,7 @@ I followed mainly one tutorial - [React Redux Tutorial for Begginers by Valentin
 - [React Router Redux - React Routing with Redux states](https://github.com/reactjs/react-router-redux)
 - [Fixing an error with React Router - using an older version](https://github.com/ReactTraining/react-router/issues/4477#issuecomment-278116607)
 - [Stack Overflow answer about async calls in Redux - using Thunk middleware](https://stackoverflow.com/a/35415559)
+- [Make imports look nicer - a few different approaches - this project uses number 5. The Environment](https://gist.github.com/branneman/8048520)
 
 ## Screenshots
 

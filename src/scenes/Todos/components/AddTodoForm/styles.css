@@ -1,0 +1,11 @@
+/* src/scenes/Todos/components/AddTodoForm/styles.css */
+
+.button {
+  max-height: '20px';
+}
+
+.container {
+  flex-grow: 1;
+  display: 'flex';
+  flex-wrap: 'wrap';
+}

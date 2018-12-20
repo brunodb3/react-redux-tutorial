@@ -1,0 +1,6 @@
+/* src/scenes/Todos/components/TodoList/styles.css */
+
+.todo-list {
+  width: 10%;
+  max-width: 360px;
+}
