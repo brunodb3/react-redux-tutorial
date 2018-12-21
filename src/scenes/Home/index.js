@@ -30,6 +30,16 @@ class HomeScene extends React.Component {
             This is the Home!
           </Typography>
           <Typography component="p">Welcome to the React + Redux tutorial app</Typography>
+          <Typography component="p">
+            You can find the source code on{' '}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/brunodb3/react-redux-tutorial"
+            >
+              GitHub/brunodb3
+            </a>
+          </Typography>
         </Paper>
       </div>
     );
