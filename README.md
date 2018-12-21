@@ -115,7 +115,9 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 I followed mainly one tutorial - [React Redux Tutorial for Begginers by Valentino Gagliardi](https://www.valentinog.com/blog/react-redux-tutorial-beginners/), but there's a few other useful links that helped with the creation of this project, listed below:
 
 - [Thunks in Redux](https://medium.com/fullstack-academy/thunks-in-redux-the-basics-85e538a3fe60)
+- [Firebase Web Hosting](https://firebase.google.com/docs/hosting/)
 - [Debug React without leaving VSCode](https://medium.com/@auchenberg/live-edit-and-debug-your-react-apps-directly-from-vs-code-without-leaving-the-editor-3da489ed905f)
+- [Security issue with target="\_blank"](https://mathiasbynens.github.io/rel-noopener/)
 - [Material UI - CSS framework for React](https://material-ui.com)
 - [Getting Started with Redux by Dan Abramov](https://egghead.io/courses/getting-started-with-redux)
 - [Why use super(props) in the constructor method](https://overreacted.io/why-do-we-write-super-props/)
@@ -127,8 +129,14 @@ I followed mainly one tutorial - [React Redux Tutorial for Begginers by Valentin
 
 ## Screenshots
 
-[![Home](https://i.postimg.cc/KvcwvKVM/image.png)](https://postimg.cc/WtKX54sN)
+[![Home](https://i.postimg.cc/jS2r0LzX/image.png)](https://postimg.cc/crpzf1kg)
 
-[![Articles](https://i.postimg.cc/3wjFv10J/image.png)](https://postimg.cc/3yRGMgZP)
+[![Todos](https://i.postimg.cc/fLKHRvs0/image.png)](https://postimg.cc/njXKdBCH)
 
-[![Users](https://i.postimg.cc/6qCvk5V6/image.png)](https://postimg.cc/ct4CYW5P)
+[![Users](https://i.postimg.cc/q7pyvHvj/image.png)](https://postimg.cc/HrPV6K5y)
+
+## Live Demo
+
+To see a live demo of the project, go to [bruno-react-redux.firebaseapp.com](https://bruno-react-redux.firebaseapp.com/)
+
+[@brunodb3](https://github.com/brunodb3) - 2018
